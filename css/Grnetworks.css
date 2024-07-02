@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      box-sizing: border-box;
+
+}
+#navbar
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem  5rem;
+    box-shadow: 5px 5px  20px rgba(0,0,0,.5) ;
+    background-color: black;
+    margin-top: -70px;
+}
+.navbar .navbar-brand
+{
+    font-size: 25px;
+    font-weight: 800;
+    
+    
+}
+#navbarSupportedContent
+{
+    color: #fff;
+    border-bottom: 2px  solid   transparent;
+}
+#navbarSupportedContent a:hover
+{
+    border-bottom: 2px solid  #fff;
+ }
+ #navbarSupportedContent a
+    {
+        transition: 2s;
+    }
+section
+{
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .home
+{
+background:  linear-gradient( rgba(0,0,0,.7),rgba(0,0,0,.4)),url(../Images/18711451_rm373batch13-089.jpg);
+height: 500px;
+width: 100%;
+background-size: cover;
+background-position: center;
+
+}
+
+
+#hcol
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top:200px;
+}
+#hcol h1{
+    color: #fff;
+}
+#hcol   p{
+    color: #fff;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+#hcol button
+{
+    border: 2px solid white;
+    width: 100px;
+    border-radius: 5px;
+    
+}
+#hcol
+{
+    
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+#courses
+{
+    
+    margin-top: 0px;
+    border: 2px solid;
+    position: relative;
+    background-color: #0f0202;
+    text-transform:capitalize;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+ .text{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    
+
+    
+}
+
+
+
+.container.courses
+{
+    height: 500px;
+    width: 100%;
+    background-color: #071952;
+    background-image: linear-gradient( rgba(0,0,0,.8),rgba(0,0,0,.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+.slider
+{   
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.slides
+{
+    height:400px;
+    width: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide  img
+{
+    height:400px;
+    width:400px;
+}
+.slide
+{
+    width: 33.33%;
+    transition: 1s;
+}
+.slides input
+{
+display: none;
+}
+.manual{
+width:400px;
+height: 20px;
+display: flex;
+justify-content: center;
+position: absolute;
+margin-top: -40px;
+}
+.manuals
+{
+    border: 2px solid   white;
+    color: white;
+    padding: 8px;
+    border-radius: 120px;
+    transition: 1s;
+}
+.manuals:hover
+{
+background: gray;
+}
+.manuals:not(:last-child)
+{
+    margin-right:40px;
+}
+#radio1:checked ~.first{
+    margin-left:0;
+    
+}
+#radio2:checked ~.first{
+    margin-left:-66.66%;
+}
+#radio3:checked ~.first{
+    margin-left:-134%;
+}
+
+.auto
+{
+    position: absolute;
+    width: 400px;
+    margin-top: 340px;
+    margin-right:797px;
+    display: flex;
+    justify-content: center;
+    
+}
+.auto   div
+{
+    border: 2px solid   white;
+    padding: 8px;
+    border-radius:10px;
+    transition:1s;
+}
+.auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+#radio1:checked ~ .auto .auto1{
+    background:yellow;
+}
+#radio2:checked ~ .auto .auto2
+{
+    background: yellow;
+}
+#radio3:checked ~ .auto .auto3
+{
+    background: yellow;
+}
+#about
+{   margin-top: 50px;
+    background-color: #071952;
+    background-image: linear-gradient( rgba(0,0,0,.8),rgba(0,0,0,.6));
+}
